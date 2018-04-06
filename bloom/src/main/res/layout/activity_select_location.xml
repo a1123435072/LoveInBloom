@@ -4,7 +4,7 @@
     android:id="@+id/activity_select_location"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.itheima.takeout2.ui.activity.SelectLocationActivity">
+    tools:context="com.zzu.Bloom.cn.zzu.Bloom.ui.activity.SelectLocationActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

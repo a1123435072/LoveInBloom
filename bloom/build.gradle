@@ -11,17 +11,17 @@ android {
 //            storePassword '123456'
 //        }
 //    }
-    compileSdkVersion 24
-    buildToolsVersion '25.0.0'
+    compileSdkVersion 26
+    buildToolsVersion '26.0.1'   //构建使用的
     defaultConfig {
 
-        applicationId "com.itheima.takeout2"
-        minSdkVersion 16
-        targetSdkVersion 24
-        versionCode 2
-        versionName "1.1"
+        applicationId "com.itheima.Bloom"   //包名
+        minSdkVersion 21    //最小的兼容的安卓版本  21 是安卓5.0
+        targetSdkVersion 26
+        versionCode 2       //版本号
+        versionName "1.1"   //软件版本号
 
-        resConfigs "zh"// 删除无用的语言包
+        resConfigs "zh"// 删除无用的语言包    只保留中文  zh是中文的代号  可一给代码瘦身,减少我用的代码
 //        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

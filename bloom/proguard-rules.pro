@@ -96,7 +96,7 @@
 -keep enum com.j256.** { *; }
 -keep interface com.j256.** { *; }
 #
--keep class com.itheima.takeout2.model.dao.bean.** { *; }
+-keep class Bloom.model.dao.bean.** { *; }
 #
 ## 不混淆 com.squareup.picasso
 -keepattributes SourceFile,LineNumberTable
@@ -118,7 +118,7 @@
 -keep class com.google.gson.stream.** { *; }
 
 ## Application classes that will be serialized/deserialized over Gson
--keep class com.itheima.takeout2.model.net.bean.** { *; }
+-keep class Bloom.model.net.bean.** { *; }
 
 ##---------------End: proguard configuration for Gson  ----------
 
