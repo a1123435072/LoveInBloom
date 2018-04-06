@@ -25,7 +25,7 @@ public class UserBean {
     @DatabaseField
     public boolean login;//电话
 
-    
+
 
     public int get_id() {
         return _id;

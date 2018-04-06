@@ -1,4 +1,4 @@
-package cn.zzu.loveinbloom.model.db;
+package cn.zzu.loveinbloom.model.dao;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -8,6 +8,7 @@ import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
 
 import cn.zzu.loveinbloom.MyApplication;
+import cn.zzu.loveinbloom.model.dao.bean.AddressBean;
 import cn.zzu.loveinbloom.model.dao.bean.UserBean;
 
 /**
@@ -52,9 +53,9 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
     public void onCreate(SQLiteDatabase database, ConnectionSource connectionSource) {
         //创建数据库表
         try{
+            //使用  数据库 开源框架初始化数据库  一个用户表一个地址表
             TableUtils.createTable(connectionSource,UserBean.class);
             TableUtils.createTable(connectionSource,AddressBean.class);
-
 
         }catch (Exception e){
             e.printStackTrace();

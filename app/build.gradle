@@ -33,11 +33,13 @@ dependencies {
     compile 'com.google.dagger:dagger:2.6'
     apt 'com.google.dagger:dagger-compiler:2.6'
     // 添加ButterKnife 寻找快捷键的工具
-    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.jakewharton:butterknife:5.1.1'//用来初始化控件的工具
     // 网络访问工具 Retrofit2
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.google.code.gson:gson:2.2.4'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //数据库
+    compile 'com.j256.ormlite:ormlite-android:5.0'
 
 
 }

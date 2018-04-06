@@ -1,4 +1,4 @@
-package com.itheima.takeout.model.dao.bean;
+package cn.zzu.loveinbloom.model.dao.bean;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
