@@ -5,7 +5,8 @@ import cn.zzu.Bloom.model.net.bean.GoodsInfo;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * Created by itheima.
+ * Created by wuyue.
+ *  商品的内存管理类
  */
 
 public class ShoppingCartManager {

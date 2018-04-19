@@ -21,7 +21,7 @@ public class PromptManager {
 
 	public static void showProgressDialog(Context context) {
 		dialog = new ProgressDialog(context);
-		dialog.setIcon(R.mipmap.ic_launcher);
+		dialog.setIcon(R.mipmap.icon);
 		dialog.setTitle(R.string.app_name);
 
 		dialog.setMessage("请等候，数据加载中……");
@@ -41,7 +41,7 @@ public class PromptManager {
 	 */
 	public static void showNoNetWork(final Context context) {
 		AlertDialog.Builder builder = new Builder(context);
-		builder.setIcon(R.mipmap.ic_launcher)//
+		builder.setIcon(R.mipmap.icon)//
 				.setTitle(R.string.app_name)//
 				.setMessage("当前无网络").setPositiveButton("设置", new OnClickListener() {
 
@@ -63,7 +63,7 @@ public class PromptManager {
 	 */
 	public static void showExitSystem(Context context) {
 		AlertDialog.Builder builder = new Builder(context);
-		builder.setIcon(R.mipmap.ic_launcher)//
+		builder.setIcon(R.mipmap.icon)//
 				.setTitle(R.string.app_name)//
 				.setMessage("是否退出应用").setPositiveButton("确定", new OnClickListener() {
 					@Override
@@ -87,7 +87,7 @@ public class PromptManager {
 	 */
 	public static void showErrorDialog(Context context, String msg) {
 		new AlertDialog.Builder(context)//
-				.setIcon(R.mipmap.ic_launcher)//
+				.setIcon(R.mipmap.icon)//
 				.setTitle(R.string.app_name)//
 				.setMessage(msg)//
 				.setNegativeButton("确定", null)//

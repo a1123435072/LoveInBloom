@@ -54,6 +54,7 @@ public class SellerDetailActivity extends BaseActivity {
 
         Intent intent = getIntent();
 
+        /** sellerId  你点的第几个条目,就是数字就是几 */
         sellerId = intent.getLongExtra("seller_id", -1);
         String name = intent.getStringExtra("name");
 

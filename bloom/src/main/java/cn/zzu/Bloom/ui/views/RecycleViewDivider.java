@@ -12,7 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * Created by Tea on 2016/8/25.
+ * Created by huaqing .  就是工具类,画一条线
  */
 public class RecycleViewDivider extends RecyclerView.ItemDecoration {
 

@@ -148,14 +148,18 @@ public class HomeFragment extends BaseFragment implements AMapLocationListener {
 
             // 滚动的总距离相对0-150之间有一个百分比，头部的透明度也是从初始值变动到不透明，通过距离的百分比，得到透明度对应的值
             // 如果小于0那么透明度为初始值，如果大于150为不透明状态
+            //格式：0x+透明值+颜色的rgb值
+            //0x FF 2172db
 
             int bgColor = 0X553190E8;
             if (sumY < 0) {
-                bgColor = 0X553190E8;
+                //bgColor = 0X553190E8;
+                bgColor = 0X00ffffff;
             } else if (sumY > 150) {
-                bgColor = 0XFF3190E8;
+                //bgColor = 0XFF3190E8;
+                bgColor = 0XFFffffff;
             } else {
-                bgColor = (int) evaluator.evaluate(sumY / duration, 0X553190E8, 0XFF3190E8);
+                bgColor = (int) evaluator.evaluate(sumY / duration, 0X00ffffff, 0XFFffffff);
             }
 
             llTitleContainer.setBackgroundColor(bgColor);

@@ -60,6 +60,7 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         int type = holder.getItemViewType();
         switch (type) {
+            // 这是给8张图片设置图片和文字
             case TYPE_HEAD:
                 ((HeadHoler) holder).setData(data.head);
                 break;
@@ -119,6 +120,7 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
             categoryContainer = (LinearLayout) itemView.findViewById(R.id.catetory_container);
         }
 
+        //  设置数据,界面上的所有的数据都是从这里面   设置的
         public void setData(Head data) {
             this.data = data;
             sliderLayout.removeAllSliders();
@@ -138,7 +140,7 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
                 // 0、1  2、3  4、5
                 // 0:创建整个条目的布局，将数据设置好后添加到条目中
                 // 1:设置数据
-                // ……
+                // 推荐列表上设置图片
 
                 View item = null;
                 for (int i = 0; i < data.categorieList.size(); i++) {
@@ -147,9 +149,11 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
                     if (i % 2 == 0) {
                         // 每个条目中的第一个元素
                         item = View.inflate(MyApplication.getContext(), R.layout.item_home_head_category, null);
+                        //从这个ip地址找图片,如果找不到图片,就从replace_img_url (备用ip地址找 图片,,显示到界面上)
                         String replace_category_pic = category.pic.replace("172.16.0.116", Constant.replace_img_url);
                         Picasso.with(MyApplication.getContext()).load(replace_category_pic).into((ImageView) item.findViewById(R.id.top_iv));
                         ((TextView) item.findViewById(R.id.top_tv)).setText(category.name);
+
 
                         categoryContainer.addView(item);
                     }
@@ -223,7 +227,7 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
 
             }
 
-            // 统计商铺的浏览量
+            // 统计商铺的浏览量  有盟统计
             MobclickAgent.onEvent(v.getContext(),"seller");
             HashMap<String, String> map = new HashMap<>();
             map.put("seller_id",data.id+"");

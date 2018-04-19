@@ -10,12 +10,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
 
             android:layout_marginTop="10dp"
             android:layout_margin="8dp"
-            android:src="@drawable/item_logo" />
+            android:src="@drawable/dianjia_logo" />
 
         <TextView android:gravity="center"
             android:id="@+id/tv_count"
@@ -60,7 +60,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:singleLine="true"
-                android:text="肯德基宅急送（文化路店）"
+                android:text="爱在鲜花盛开时（测试店）"
                 android:textColor="@android:color/black"
                 android:textSize="24sp" />
 

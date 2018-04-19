@@ -6,6 +6,7 @@
     android:orientation="vertical">
 
 
+    <!--  轮播图 开源框架控件 -->
     <com.daimajia.slider.library.SliderLayout
         android:id="@+id/slider"
         android:layout_width="match_parent"
@@ -51,7 +52,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="5dp"
             android:textColor="@android:color/darker_gray"
-            android:text="附近商家" />
+            android:text="附近的鲜花点店" />
     </LinearLayout>
 
 </LinearLayout>

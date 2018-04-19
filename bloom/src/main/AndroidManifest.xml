@@ -96,7 +96,7 @@
     <application
         android:name="cn.zzu.Bloom.MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -112,7 +112,7 @@
         <!-- 地图key：cef12fd8742c0c2f25df4a022cc4cd05 -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="4c5499a86aa5c1ffa21d8e2376596790"/>
+            android:value="9f32d3acb7705970ca3360bb93c5c7b4"/>
         <!-- 定位的服务 -->
         <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
         <service android:name="com.amap.api.location.APSService"/>
